@@ -4,14 +4,13 @@ from openai import OpenAI
 
 load_dotenv()
 
-
 client = OpenAI(
     api_key=os.getenv("OPENAI_API_KEY"),
     organization=os.getenv("OPENAI_ORG_ID")
 )
 
 # プロンプトの読み込み
-with open("prompt4.txt", "r", encoding="utf-8") as f:
+with open("prompt0.txt", "r", encoding="utf-8") as f:
     base_prompt = f.read()
 
 def chat():
