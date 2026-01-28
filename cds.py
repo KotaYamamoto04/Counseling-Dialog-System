@@ -6,8 +6,8 @@ load_dotenv()
 
 
 client = OpenAI(
-    api_key=os.getenv("YOUR_API_KEY"),
-    organization=os.getenv("YOUR_ORG_ID")
+    api_key=os.getenv("OPENAI_API_KEY"),
+    organization=os.getenv("OPENAI_ORG_ID")
 )
 
 # プロンプトの読み込み
